@@ -35,7 +35,7 @@
           uses: actions/upload-artifact@v2
           with:
             name: php-app
-            path: .
+            path: 'd:\home\site\wwwroot'
   
     deploy:
       runs-on: ubuntu-latest

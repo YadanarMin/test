@@ -35,7 +35,7 @@
           uses: actions/upload-artifact@v2
           with:
             name: php-app
-            path: 'd:\home\site\wwwroot'
+            path: .
   
     deploy:
       runs-on: ubuntu-latest
@@ -57,4 +57,4 @@
             app-name: 'OHB-SPOKE-CCC'
             slot-name: 'production'
             publish-profile: ${{ secrets.AzureAppService_PublishProfile_42ae45a4ab764fb5aad26380adee1818 }}
-            package: 'd:\home\site\wwwroot'
+            package: .

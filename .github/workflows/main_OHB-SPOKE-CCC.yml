@@ -56,5 +56,4 @@
           with:
             app-name: 'OHB-SPOKE-CCC'
             slot-name: 'production'
-            publish-profile: ${{ secrets.AzureAppService_PublishProfile_65e126c0b31d4ca5ba4e23719ef3969d }}
-            package: .
+           

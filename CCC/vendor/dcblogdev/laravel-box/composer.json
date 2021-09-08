@@ -1,0 +1,33 @@
+{
+    "name": "dcblogdev/laravel-box",
+    "description": "A Laravel Box package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Carr",
+            "email": "dave@dcblog.dev",
+            "homepage": "https://dcblog.dev"
+        }
+    ],
+    "homepage": "https://github.com/dcblogdev/laravel-box",
+    "keywords": ["Laravel", "Box"],
+    "require": {
+        "illuminate/support": "5.5.x|5.6.x|5.7.x|5.8.x|6.x",
+        "guzzlehttp/guzzle": "^6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcblogdev\\Box\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dcblogdev\\Box\\BoxServiceProvider"
+            ],
+            "aliases": {
+                "Box": "Dcblogdev\\Box\\Facades\\Box"
+            }
+        }
+    }
+}
